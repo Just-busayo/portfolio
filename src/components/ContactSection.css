@@ -1,0 +1,127 @@
+.contact-cta-section {
+  padding: 80px 0 100px;
+  position: relative;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.contact-reflection {
+  max-width: 680px;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.contact-prompt-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 620px;
+  margin-bottom: 90px;
+}
+
+.contact-sparkle {
+  position: absolute;
+  pointer-events: none;
+}
+
+.sparkle-gold-left {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.sparkle-gold-right {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.contact-prompt-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.btn-send-message {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 36px;
+  border-radius: 9999px;
+  border: 1px solid rgba(112, 89, 246, 0.6);
+  background: rgba(18, 19, 27, 0.6);
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+.btn-send-message:hover {
+  background: var(--accent-purple);
+  border-color: var(--accent-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px var(--accent-purple-glow);
+}
+
+/* Next Project Teaser */
+.next-project-teaser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.next-project-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.next-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  transition: all 0.25s ease;
+}
+
+.next-project-link:hover {
+  color: var(--accent-purple-light);
+}
+
+.teaser-arrow {
+  transition: transform 0.25s ease;
+}
+
+.next-project-link:hover .teaser-arrow {
+  transform: translate(4px, -4px);
+}
+
+@media (max-width: 640px) {
+  .sparkle-gold-left {
+    left: 0;
+    top: 20%;
+  }
+  .sparkle-gold-right {
+    right: 0;
+    bottom: 20%;
+  }
+}

@@ -1,0 +1,155 @@
+.writing-section {
+  padding: 80px 0;
+}
+
+.writing-header {
+  margin-bottom: 40px;
+}
+
+.writing-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.writing-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.writing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.writing-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-hover);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+.writing-thumb-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  background: #111218;
+  overflow: hidden;
+}
+
+.writing-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.writing-card:hover .writing-thumb-img {
+  transform: scale(1.05);
+}
+
+/* Graphic Card: "A great designer never follows the trend." */
+.writing-graphic-banner {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #0b0c10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.15;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.graphic-lead {
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1a1a24;
+}
+
+.graphic-main {
+  font-size: 1.65rem;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  color: #000;
+}
+
+.graphic-bold {
+  font-size: 1.95rem;
+  font-weight: 950;
+  letter-spacing: -0.01em;
+  color: #000;
+}
+
+.graphic-accent {
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.writing-card:hover .writing-graphic-banner {
+  background: #f1eeff;
+}
+
+.writing-meta-pill {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(10, 11, 14, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.writing-card-body {
+  padding: 20px 22px 24px;
+}
+
+.writing-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.writing-card:hover .writing-card-title {
+  color: var(--accent-purple-light);
+}
+
+@media (max-width: 860px) {
+  .writing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .writing-grid {
+    grid-template-columns: 1fr;
+  }
+}

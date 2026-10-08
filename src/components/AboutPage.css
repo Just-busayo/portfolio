@@ -1,0 +1,330 @@
+.about-page-view {
+  padding: 50px 0 100px;
+}
+
+.about-page-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Intro Text */
+.about-page-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 70px;
+}
+
+.about-page-intro p {
+  margin: 0;
+}
+
+/* Headings */
+.section-title-center {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.section-subtitle-center {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 36px;
+  line-height: 1.6;
+}
+
+/* Process Section */
+.process-section {
+  margin-bottom: 80px;
+}
+
+.process-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.process-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.25s ease;
+}
+
+.process-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.process-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(112, 89, 246, 0.12);
+  border: 1px solid rgba(112, 89, 246, 0.3);
+  color: var(--accent-purple-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-step-number {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.process-step-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.process-step-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Skills & Tools Section */
+.skills-tools-section {
+  margin-bottom: 80px;
+}
+
+.skills-tools-columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.category-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.category-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tags-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-pill,
+.tool-pill {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 9999px;
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skill-pill:hover,
+.tool-pill:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple-light);
+  transform: translateY(-1px);
+}
+
+/* Glimpse of my world Gallery */
+.glimpse-section {
+  margin-bottom: 80px;
+}
+
+.glimpse-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.glimpse-photo-card {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #191b26;
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glimpse-photo-card:hover {
+  transform: scale(1.04);
+  border-color: var(--border-hover);
+  z-index: 2;
+}
+
+.glimpse-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.03) brightness(0.96);
+  transition: filter 0.3s ease;
+}
+
+.glimpse-photo-card:hover img {
+  filter: contrast(1.08) brightness(1.02);
+}
+
+/* Things I Love */
+.things-love-section {
+  margin-bottom: 80px;
+}
+
+.things-love-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.love-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.love-pill:hover {
+  border-color: #f43f5e;
+  transform: translateY(-2px);
+}
+
+.love-pill:hover .heart-icon {
+  color: #f43f5e;
+  transform: scale(1.2);
+}
+
+.heart-icon {
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+/* Listening & Reading Media Grid */
+.media-section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.media-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.media-box-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.media-header-icon {
+  color: var(--accent-purple-light);
+}
+
+.media-box-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.media-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.media-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.media-list-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.media-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.media-item-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.media-item-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.media-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-purple-light);
+  background: rgba(112, 89, 246, 0.1);
+  border: 1px solid rgba(112, 89, 246, 0.25);
+  padding: 3px 10px;
+  border-radius: 9999px;
+}
+
+@media (max-width: 768px) {
+  .process-cards-grid,
+  .media-section-grid {
+    grid-template-columns: 1fr;
+  }
+  .glimpse-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
